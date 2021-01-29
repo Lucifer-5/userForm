@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>User Form</title>
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="css/masterstyle.css">
+
+</head>
+<body>
+  <div class="bg">
+    <section class="container-fluid ">
+      <div class="bgcolor">
+
+
+      <h1>User Form</h1>
+      <br>
+      <form action="https://getform.io/f/108e8e04-ebea-4e1e-8bda-888a2a25d5cf" method="POST">
+
+        <div class="row g-3 needs-validation" novalidate>
+          <div class="col-md-4">
+            <input type="text" name="name" class="form-control" placeholder="Name" aria-label="Name" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col">
+            <input type="number" name="Seat No."   class="form-control" placeholder="Seat No." aria-label="Seat No." id="invalidCheck" required>
+            <div class="invalid-feedback">
+              You can enter only Numerical values
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row ">
+        <div class="col-sm-8">
+        <div class="form-floating">
+
+        <input type="email" name="email" class="form-control" id="invalidCheck" placeholder="name@example.com" required>
+        <label for="email-id" class="" style=" ">Email address</label>
+      </div>
+      </div>
+      <div class="col">
+      <div class="form-floating">
+        <select class="form-select" id="branch" onchange="javascript: checkvalue(this.options[this.selectedIndex].value);" required>
+          <option selected>Choose...</option>
+
+        </select>
+
+  <label  for="inputGroupSelect01">Branch</label>
+</div>
+</div>
+</div>
+<br>
+<div class="row">
+  <div class="col col-sm-4">
+    <div class="form-floating">
+      <select class="form-select" id="sem" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);" required>
+        <option selected>Choose your Branch</option>
+
+      </select>
+      <label for="inputGroupSelect01">Semester</label>
+    </div>
+  </div>
+  <div class="col">
+  <div class="form-floating">
+    <select id="genDropdown" class="form-select" id="Sub1" required>
+      <option selected>Choose a Sem</option>
+
+
+    </select>
+    <label for="inputGroupSelect01">Subject Name</label>
+
+  </div>
+
+  </div>
+
+</div>
+<br>
+<div class="row">
+  <div class="col">
+    <div class="form-floating">
+
+
+    <select class="form-select" id="papertype"  required>
+      <option selected>Choose...</option>
+      <option value="1">MCQ</option>
+      <option value="2">Descriptive</option>
+
+    </select>
+    <label for="inputGroupSelect01">Paper Type</label>
+</div>
+  </div>
+  <div class="col">
+
+      <div class="form-floating">
+       <input type="text" name="name" class="form-control" placeholder="Class" aria-label="Class" required>
+        <label for="inputGroupSelect01">Class</label>
+      </div>
+
+
+
+  </div>
+
+</div>
+<br>
+
+  <button type="submit" value="Submit"  style="color: #e8e8e8;" class="btn btn-md btn-outline-dark">Submit</button>
+
+</form>
+</div>
+    </section>
+
+  </div>
+
+
+<script src="jscript/userjs.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
